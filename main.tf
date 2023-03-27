@@ -55,7 +55,7 @@ resource "azurerm_virtual_machine" "virtual_machine" {
   ]
 }
 resource "azurerm_network_interface" "network_interface" {
-  name                = "{{.name}}-nic"
+  name                = "testnic"
   location            = var.location
   resource_group_name = var.resource_group_name
   ip_configuration {
